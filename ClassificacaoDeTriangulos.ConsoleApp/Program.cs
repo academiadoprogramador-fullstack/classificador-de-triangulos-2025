@@ -37,7 +37,23 @@
                     ladoY + ladoZ > ladoX;
 
                 if (medidasTrianguloValidas == true)
-                    Console.WriteLine("O triângulo é válido!");
+                {
+                    // Eqüilátero: Todos os lados iguais
+                    // Escaleno: Todos os lados diferentes
+                    // Isósceles: Dois lados iguais
+                    string tipoTriangulo = "Não classificado";
+
+                    if (ladoX == ladoY && ladoY == ladoZ)
+                        tipoTriangulo = "Eqüilátero";
+
+                    else if (ladoX != ladoY && ladoY != ladoZ && ladoX != ladoZ)
+                        tipoTriangulo = "Escaleno";
+
+                    else
+                        tipoTriangulo = "Isósceles";
+
+                    Console.WriteLine($"O triângulo é {tipoTriangulo}.");
+                }
                 else
                     Console.WriteLine("Os valores informados não formam um triângulo válido");
 
