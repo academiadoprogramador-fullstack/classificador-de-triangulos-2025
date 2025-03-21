@@ -1,6 +1,6 @@
 # Classificador de Triângulos 2025
 
-![](https://i.imgur.com/beWC3gu.gif)
+![](https://imgur.com/WeUmduj.gif)
 
 ## Introdução
 
